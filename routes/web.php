@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('about', function()
+{
+    return view('about');
+});
+
+Route::get('blog', function()
+{
+    return view('blog.index');
+});
+Route::get('blog', 'BlogController@create')->name('blog.create');
+Route::post('blog', 'BlogController@store')->name('blog.store');
