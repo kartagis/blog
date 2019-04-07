@@ -6,6 +6,8 @@
     </div>
     <div class="links">
         <a href="https://github.com/kartagis">GitHub</a>
+        <a href="{{ URL::route('about') }}">About Me</a>
+        <a href="{{ URL::route('posts.index') }}">Blog entries</a>
     </div>
 </div>
 </div>

@@ -13,16 +13,13 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('about', function()
 {
     return view('about');
-});
+})->name('about');
 
-Route::get('blog', function()
-{
-    return view('blog.index');
-});
-Route::get('blog', 'BlogController@create')->name('blog.create');
-Route::post('blog', 'BlogController@store')->name('blog.store');
+Route::get('posts/index', 'PostController@index')->name('posts.index');
+Route::get('post', 'PostController@create')->name('post.create');
+Route::post('post', 'PostController@store')->name('post.store');
