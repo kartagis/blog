@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/master.css">
 </head>
 <body>
-    <div class="flex-center position-ref full-height">
+    <div class="flex-center position-ref full-height flex-column">
         @if (Route::has('login'))
         <div class="top-right links">
             @auth
