@@ -23,3 +23,13 @@ Route::get('about', function()
 Route::get('posts/index', 'PostController@index')->name('posts.index');
 Route::get('post', 'PostController@create')->name('post.create');
 Route::post('post', 'PostController@store')->name('post.store');
+Route::get('login', function()
+{
+})->name('login');
+Route::get('register', function()
+{
+})->name('register');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

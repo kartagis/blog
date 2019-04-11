@@ -52,3 +52,10 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+.item {
+    float: left;
+    margin-right: 5px;
+}
+.item a {
+    display: block !important;
+}
